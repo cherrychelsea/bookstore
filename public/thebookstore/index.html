@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Bookstore</title>
+	    <!-- Boostrap -->
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/custom.css">
+	    <!-- Font awesome -->
+	    <link rel="stylesheet" href="fa/css/font-awesome.css">
+	    <link rel="stylesheet" href="fp/css/flickerplate.css">
+		<!-- script -->
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Header -->
+			<div class="header">
+				<!-- Topbar -->
+				<div class="topbar">
+					<div class="container">
+						<!-- Topbar Navigation -->
+						<ul class="loginbar pull-right">
+							<li class="social facebook">
+								<i class="fa fa-facebook-square"></i>
+							</li>
+							<li class="social google-plus">
+								<i class="fa fa-google-plus-square"></i>
+							</li>
+							<li class="social youtube">
+								<i class="fa fa-youtube-square"></i>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#">Log in</a>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#">My Order</a>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#">Help</a>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#" class="dropdown-toggle" type="button" id="languageDropdownMenu" data-toggle="dropdown" aria-expanded="true">Languages</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="languageDropdownMenu">
+									<li role="presentation">English</li>
+									<li role="presentation">Vietnamese</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- End Topbar Navigation -->		
+					</div>
+				</div> <!-- end of Topbar -->
+				<!-- Navbar -->
+				<div class="navbar navbar-default thebookstore-navbar" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+		                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		                        <span class="sr-only">Toggle navigation</span>
+		                        <span class="fa fa-bars"></span>
+		                    </button>
+		                    <a class="navbar-brand" href="index.html">
+		                        <img id="logo-header" class="brand-img" src="img/brand/thebookstore_logo.png" alt="The Book store">
+		                    </a>
+		                </div>
+		                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <form class="navbar-form navbar-left" role="search">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="Search">
+					        </div>
+					        <button type="submit" class="btn btn-default">Search</button>
+					      </form>
+					      <ul class="nav navbar-nav navbar-right">
+					      	<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								<i class="fa fa-lg fa-bell"></i> Notification
+					          </a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					          </ul>
+					        </li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								<i class="fa fa-lg fa-shopping-cart"></i>	Your cart
+					          </a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					          </ul>
+					        </li>
+					      </ul>
+					    </div>
+					</div>
+				</div> <!-- end of Navbar -->
+				<!-- Navigation Menu -->
+			</div> <!-- end of Header -->
+			<!-- Body content -->
+			<div class="body-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-2 col-lg-3">
+							<div class="left-sidebar">
+								<div class="row">
+									<!-- Categories -->
+									<div class="categories">
+										<div class="categories-header">
+											<h3 class="">Categories</h3>
+										</div>
+										<div class="categories-list">
+											<ul class="category-list">
+												<li class="category-item" role="presentation">
+													<a href="">Art &amp; Photography</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Business &amp; Money</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Children's Books</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Computers &amp; Technology</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Cookbooks, Foods &amp; Wine</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Education &amp; Teaching</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Fictions &amp; Novels</a>
+												</li>
+												<li class="category-item" role="presentation">
+													<a href="">Travel &amp; Discovery</a>
+												</li>
+											</ul>
+										</div>
+									</div> <!-- end of Categories -->
+								</div>
+								<div class="row">
+									<!-- Refine Conditions -->
+									<div class="refine">
+										<div class="refine-header">
+											<h3>Refined by</h3>
+										</div>
+										<div class="refine-list">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="header">
+														<h4>Author</h4>
+													</div>
+													<ul class="refined-by-author">
+														<li class="author-item">
+															<a href="">Author name</a>
+														</li>
+														<li class="author-item">
+															<a href="">Author name</a>
+														</li>
+														<li class="author-item">
+															<a href="">Author name</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="header">
+														<h4>Format</h4>
+													</div>
+													<ul class="refined-by-format">
+														<li class="format-item">
+															<a href="">Paperback</a>
+														</li>
+														<li class="format-item">
+															<a href="">Ebook</a>
+														</li>
+														<li class="format-item">
+															<a href="">Hardcover</a>
+														</li>
+														<li class="format-item">
+															<a href="">Audio Books</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Refine Conditions -->
+								</div>
+							</div> <!-- end of Left-Sidebar -->
+						</div>
+						<div class="col-md-9 col-xs-10 col-lg-9">
+							<!-- Main content -->
+							<div class="main">
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+										<!-- Slider -->
+										<div class="slider">
+											<div class="flicker prominent-items">
+												<ul>
+													<li>
+													</li>
+													<li>
+													</li>
+													<li>
+													</li>
+												</ul>
+											</div>
+										</div> <!-- end of Slider-->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+										<div class="upcomming">
+											<div class="header upcomming-header">
+												<h4>New &amp; Upcomming Releases</h4>
+												<a href="#" class="pull-right">See all</a>
+											</div>
+											<section class="upcomming-books">
+												<div class="row">
+													<div class="col-md-4">
+														<div class="upcomming-book book-item">
+															<div class="book-visual">
+																<div class="book-thumb">
+																	
+																</div>
+															</div>
+															<div class="book-meta">
+																<div class="title">
+																	
+																</div>
+																<div class="author">
+																	
+																</div>
+																<div class="publisher">
+																	
+																</div>
+																<div class="price"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end of Main Content -->
+						</div>
+					</div>
+				</div>
+			</div> <!-- end of Body Content -->
+		</div>
+		<script src="fp/js/min/modernizr-custom-v2.7.1.min.js"></script>
+		<script src="fp/js/min/hammer-v2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Image Slider FP -->
+		<script src="fp/js/min/flickerplate.min.js"></script>
+		<script src="js/slider.js"></script>
+	</body>
+</html>

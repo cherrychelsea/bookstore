@@ -1,0 +1,64 @@
+/* Overide Chrome default outline for inputs */
+* {
+	outline: none;
+}
+
+/**
+ * General Styles
+ */
+ p, li, li a {
+	color: #252c3c;
+ }
+
+/* Wrapper for page content */
+.wrapper {
+	background: none repeat scroll 0% 0% #fff;
+}
+
+/* Adjust the size of brand image */
+.brand-img {
+	height: 40px;
+	width: auto;
+	margin-top: -10px;
+}
+
+/**
+ * Topbar
+ */
+.header .topbar {
+	padding: 8px 0px;
+}
+
+.header .topbar ul.loginbar > li {
+	display: inline;
+	list-style: outside none none;
+	position: relative;
+	padding-bottom: 15px;
+}
+
+.header .topbar ul.loginbar li i.fa {
+	color: #252c3c;
+}
+
+.header .topbar ul.loginbar li.topbar-divider {
+	top: -1px;
+	padding: 0px;
+	font-size: 12px;
+	position: relative;
+	margin: 0px 9px 0px 5px;
+	font-family: 'Tahoma';
+	border-right: 1px solid #bbb;
+}
+
+/* Override Bootstrap 3 default navbar */
+.header .thebookstore-navbar {
+	border: medium none;
+	background: none repeat scroll 0% 0% transparent;
+}
+
+/**
+ * Flickerplate Image Slider
+ */
+ .slider .flicker {
+ 	max-height: 320px;
+ }
