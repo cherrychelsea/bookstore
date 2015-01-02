@@ -1,0 +1,18 @@
+/**
+ * Fonts for headers
+ */
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,vietnamese);
+
+  h4, 
+ .footer .footer-item .header {
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: 400;
+ 	font-size: 20px;
+ 	color: #bf132b;
+ }
+
+ .left-sidebar h3 {
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: 400;
+ 	font-size: 20px;
+ }

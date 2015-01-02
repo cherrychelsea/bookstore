@@ -1,3 +1,5 @@
+@import url('font.css');
+
 /* Overide Chrome default outline for inputs */
 * {
 	outline: none;
@@ -6,8 +8,17 @@
 /**
  * General Styles
  */
+ body {
+	font-family: 'Arial', Helvetica, sans-serif;
+	font-size: 13px;
+ }
+
  p, li, li a {
-	color: #252c3c;
+	color: #252c3cs;
+ }
+
+ a {
+ 	color: #313854 !important;
  }
 
 /* Wrapper for page content */
@@ -19,14 +30,16 @@
 .brand-img {
 	height: 40px;
 	width: auto;
-	margin-top: -10px;
+	margin-top: -12px;
+	margin-left: -25px;
 }
 
 /**
  * Topbar
  */
 .header .topbar {
-	padding: 8px 0px;
+	padding: 8px 0px 0px 0px;
+	background-color: #313854;
 }
 
 .header .topbar ul.loginbar > li {
@@ -36,8 +49,13 @@
 	padding-bottom: 15px;
 }
 
+.header .topbar ul.loginbar li a {
+	color: rgba(255,255,255,0.65) !important;
+}
+
 .header .topbar ul.loginbar li i.fa {
-	color: #252c3c;
+	/*color: #252c3c;*/
+	color: rgba(255,255,255,0.65) !important;
 }
 
 .header .topbar ul.loginbar li.topbar-divider {
@@ -47,18 +65,459 @@
 	position: relative;
 	margin: 0px 9px 0px 5px;
 	font-family: 'Tahoma';
-	border-right: 1px solid #bbb;
+	border-right: 1px solid rgba(255,255,255,0.45);
+}
+
+.header .topbar #languageSelector {
+	top: 20px;
+	width: 180px;
+	border-bottom: 4px solid #313854;
+}
+
+.header .topbar #languageSelector > li {
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	color: #313854 !important;
+}
+
+.header .topbar #languageSelector > li:hover {
+	background-color: #f3f3f3;
 }
 
 /* Override Bootstrap 3 default navbar */
 .header .thebookstore-navbar {
 	border: medium none;
 	background: none repeat scroll 0% 0% transparent;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.24);
 }
+
+/**
+ * Navbar Search Form
+ */
+ #navSearchForm {
+ 	display: inline-block;
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+ 	padding-top: 8px;
+ }
+
+ .navbar-search input._input-search {
+ 	font-size: 12px;
+ }
+
+ .navbar-search input._input-search:active,
+ .navbar-search input._input-search:focus {
+ 	border-color: #bf132b;
+ 	transition: none;
+ 	box-shadow: none;
+ }
+
+ .navbar-search ._search-btn {
+ 	border-color: #bf132b;
+ 	color: #fff;
+ 	font-size: 14px;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ 	background: linear-gradient(to top, #A51A2D,#C12F45);
+ 	padding: 6px 20px;
+ 	/*font-weight: bold;*/
+ 	text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+ 	border-top-right-radius: 0px;
+ 	border-bottom-right-radius: 0px;
+ 	box-shadow: none;
+ 	z-index: 3;
+ 	outline: none;
+ }
+
+/* Override Bootstrap 3 dropdown menu */
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 180px;
+	width: 200px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	font-size: 13px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	color: #313854;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 0px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+/*.header .thebookstore-navbar .input-group .input-group-btn button,
+.header .thebookstore-navbar .input-group input {
+	font-size: 12px !important;
+}*/
+
+/**
+ * Left sidebar
+ */
+.left-sidebar .categories,
+.left-sidebar .refine,
+.left-sidebar .social {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid #e9e9e9;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+.left-sidebar .categories .categories-header,
+.left-sidebar .refine .refine-header,
+.left-sidebar .social .social-header {
+	padding: 8px;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.left-sidebar .categories .categories-header .header,
+.left-sidebar .refine .refine-header .header,
+.left-sidebar .social .social-header .header {
+	margin: 0px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #313854;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.left-sidebar .categories .categories-header .header i.fa,
+.left-sidebar .refine .refine-header .header i.fa,
+.left-sidebar .social .social-header .header i.fa {
+	margin-right: 10px;
+}
+
+/* Categories List */
+.left-sidebar .categories div.categories-list {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.left-sidebar .categories div.categories-list ul.category-list {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.left-sidebar .categories div.categories-list ul.category-list > li {
+	padding-left: 19px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-left: 2px solid transparent;
+	font-weight: bold;
+	
+}
+
+.left-sidebar .categories div.categories-list ul.category-list > li .item-link	{
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+
+.left-sidebar .categories div.categories-list ul.category-list > li a {
+
+}
+
+.left-sidebar .categories div.categories-list ul.category-list > li .item-link a:hover {
+	text-decoration: none;
+	color: #bf132b !important;
+}
+
+.left-sidebar .refine .refine-list {
+	padding-left: 19px;
+	margin-top: 10px;
+}
+
+.left-sidebar .refine .refine-list ul {
+	list-style: none;
+	padding-left: 19px;
+}
+
+.left-sidebar .refine .refine-list ul.refine-by-format li span {
+	vertical-align: middle;
+}
+
+.left-sidebar .refine .apply-filter	{
+	margin-left: 5px;
+	margin-right: 5px;
+	padding:10px;
+
+}
+
+.left-sidebar .refine .apply-filter	a.filter-btn {
+	padding: 6px 8px;
+	border-radius: 2px;
+	color: #fff !important;
+	background-color: #313854;
+	background: linear-gradient(to bottom, #313854, #252c34);
+	text-decoration: none;
+}
+
+.left-sidebar .show-all {
+	cursor: pointer;
+	padding-left: 19px;
+	margin-bottom: 10px;
+}
+
+ /*---- end of Left Sidebar ----*/
+
+ /**
+  * Body Content
+  */
+.body-content {
+	padding-bottom: 60px;
+	padding-top: 20px;
+	background-color: #fcfcfc;
+}
+
+/*---- end of Body Content ----*/
 
 /**
  * Flickerplate Image Slider
  */
  .slider .flicker {
  	max-height: 320px;
+ }
+
+ /**
+  * Main > Sections
+  */
+ .main .header {
+	display: block;
+	margin: 15px 0px 15px 0px;
+	border-bottom: 1px solid #e3e3e3;
+ }
+
+ .main .header h4 {
+ 	display: inline-block;
+ }
+
+ .main .header a {
+ 	margin-top: 14px;
+ 	color: #313854;
+ }
+
+ .main .header a:hover {
+ 	text-decoration: none;
+ }
+
+ .main .prominent-items {
+ 	padding: 0px;
+ 	margin: 0px;
+ }
+
+.main .prominent-items ul li .flick-inner, 
+.main .prominent-items ul li .flick-conttent {
+ 	padding: 0px;
+ 	margin: 0px;
+ } 
+
+ .main .prominent-items ul li img {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .slider .flickerplate {
+ 	background-color: transparent;
+	border-radius: 6px;
+ }
+ /**
+  * Book Items
+  */
+
+ .bookself-bar {
+ 	position: absolute;
+	width: 95%;
+	height: 18px;
+	border-radius: 2px;
+	background-color: #313854;
+ }
+
+ .book-item .book-thumb {
+	width: 100%;
+	margin-bottom: 15px;
+ }
+
+ .book-item .book-thumb .book-img {
+	padding-top: 12px;
+	margin-bottom: 20px;
+ }	
+
+ .book-item .book-thumb img.book-thumbnail {
+ 	max-width: 180px;
+ 	width: 108px;
+ 	height: auto;
+ 	display: table;
+ 	margin: 0 auto;
+ 	box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+ 	border: 1px solid #eee;
+ }
+
+ .book-item .book-visual div.book-promotion .new,
+ .book-item .book-visual div.book-promotion .discount {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 30px;
+ 	z-index: 3;
+ 	padding: 8px;
+ 	border-radius: 2px;
+ 	border: none;
+ 	font-size: 12px;
+ 	line-height: 1.05em;
+ 	color: #fff;
+ 	font-weight: bold;
+ 	text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+ }
+
+ .book-item .book-visual div.book-promotion .new {
+ 	background-color: #bf132b;
+ }
+
+ .book-item .book-visual div.book-promotion .discount {
+    background-color: #5FBC26;
+ }
+ .book-item .book-meta .title,
+ .book-item .book-meta .title a, {
+ 	color: #313854;
+ }
+
+ .book-item .book-meta .book-title {
+ 	margin-bottom: 4px;
+ 	font-weight: bold;
+ }
+
+ .book-item .book-meta .book-author {
+ 	color: #848587;
+ 	font-weight: bold;
+ }
+ 
+ /* Rate and comment */
+ .book-item .book-meta .rate-comment {
+ 	display: table;
+ }
+
+ .book-item .book-meta .rate-comment .rate-box,
+ .book-item .book-meta .rate-comment .comment-box {
+ 	display: table-cell;
+ }
+
+ .book-item .book-meta .rate-comment .rate-box {
+ 	width: 69px;
+ 	height: 13px;
+ 	float: left;
+ 	margin-right: 5px;
+ 	background: url('../img/icon/product_rating_blank_star.gif') repeat-x;
+ }
+
+ .book-item .book-meta .rate-comment .rate-box .ratings {
+ 	height: 13px;
+ 	background: url('../img/icon/product_rating_full_star.gif') repeat-x;	
+ }
+
+ .book-item .book-meta .price {
+ 	font-size: 14px;
+ }
+
+ .book-item .book-meta .price .book-price {
+ 	font-weight: bold;
+ }
+
+ /**
+  * Popular Author section
+  */
+ .main article.popular-author {
+ 	display: table;
+ }
+
+ .main article.popular-author .author-meta,
+ .main article.popular-author .author-bio {
+ 	display: table-cell;
+ }
+
+ .main article.popular-author .author-meta .author-img {
+ 	width: 160px;
+ }
+
+ .main article.popular-author .author-meta .author-img img.author-img {
+ 	display: table;
+ 	margin: 0 auto;
+ 	width: 120px;
+ 	box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+
+ }
+
+ .main article.popular-author .author-meta .author-info {
+ 	width: 100%;
+ 	text-align: center;
+ }
+
+  .main article.popular-author .author-bio {
+  	vertical-align: top;
+  }
+
+ /**
+  * Footer
+  */
+ .footer {
+ 	background-color: #ededed;
+ 	color: #333;
+ 	padding-top: 35px;
+ 	padding-bottom: 35px;
+ 	border-top: 1px solid #bbb;
+ }
+
+ .footer a, .footer p, .footer span {
+ 	color: #333;
+ }
+
+ .footer img.logo-footer {
+ 	height: 36px;
+ 	margin-left: -10px;
+ 	margin-bottom: 14px;
+ }
+
+ .footer .footer-item .header {
+ 	color: #252c3c;
+ 	border-bottom: 1px dotted #252c3c;
+ }
+
+ .footer .footer-item ul {
+ 	margin-top: 8px;
+ 	list-style: none;
+ 	padding-left: 0px;
+ }
+
+ .footer .footer-item ul > li {
+ 	padding: 2px 0px;
+ }
+
+ .footer .footer-item ul > li > a {
+ 	font-weight: bold;
+ }
+
+ .copyright-section {
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	background-color: #ff;
+ 	border-top: 1px solid #bbb;
+ 	color: #fcfcfc;
+ 	background-color: #313854;
  }

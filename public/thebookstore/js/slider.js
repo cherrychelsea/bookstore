@@ -9,6 +9,6 @@ $(document).ready(function() {
 		dot_navigation: true,
 		flick_animation: 'transition-slide',
 		flick_position: 1,
-		theme: 'light'
+		theme: 'dark'
 	});
 });
