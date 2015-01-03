@@ -34,6 +34,16 @@
 	margin-left: -25px;
 }
 
+hr.divider {
+	border-color: #ccc;
+}
+
+div.marginbottom-20 {
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
 /**
  * Topbar
  */
@@ -125,7 +135,6 @@
  	text-align: center;
  	background: linear-gradient(to top, #A51A2D,#C12F45);
  	padding: 6px 20px;
- 	/*font-weight: bold;*/
  	text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
  	border-top-right-radius: 0px;
  	border-bottom-right-radius: 0px;
@@ -410,16 +419,20 @@
  }
  
  /* Rate and comment */
- .book-item .book-meta .rate-comment {
- 	display: table;
+ .book-item .book-meta .rate-comment,
+ .book-detail-info .book-ratings .rate-box {
+ 	display: block;
+ 	width: 100%;
  }
 
  .book-item .book-meta .rate-comment .rate-box,
  .book-item .book-meta .rate-comment .comment-box {
- 	display: table-cell;
+ 	display: inline-block;
+ 	width: 50%;
  }
 
- .book-item .book-meta .rate-comment .rate-box {
+ .book-item .book-meta .rate-comment .rate-box,
+ .book-detail-info .book-ratings .rate-box {
  	width: 69px;
  	height: 13px;
  	float: left;
@@ -427,7 +440,8 @@
  	background: url('../img/icon/product_rating_blank_star.gif') repeat-x;
  }
 
- .book-item .book-meta .rate-comment .rate-box .ratings {
+ .book-item .book-meta .rate-comment .rate-box .ratings,
+ .book-detail-info .book-ratings .rate-box .ratings {
  	height: 13px;
  	background: url('../img/icon/product_rating_full_star.gif') repeat-x;	
  }
@@ -520,4 +534,329 @@
  	border-top: 1px solid #bbb;
  	color: #fcfcfc;
  	background-color: #313854;
+ }
+
+ /**
+  * MegaMenu
+  */
+
+ /* To prevent sub nav of index lying under slider */
+ .megamenu__nav-sub {
+ 	z-index: 1000;
+ }
+ .megamenu-wrapper {
+ 	position: absolute;
+ 	z-index: 900;
+ }
+ .megamenu .megamenu__nav .megamenu__nav-box .megamenu__menu-all i.fa {
+	margin-right: 5px;
+ }
+
+ .megamenu .megamenu__nav .megamenu__nav-box .megamenu__menu-all .megamenu__menu-title {
+ 	display: inline-block;
+ 	text-transform: uppercase;
+ }
+
+ .megamenu .megamenu__nav .megamenu__nav-box .megamenu__nav-list {
+ 	/*display: none;*/
+ }
+
+ .megamenu .megamenu__list {
+ 	display: none;
+ 	cursor: pointer;
+ }
+
+ .megamenu .megamenu__list
+
+ .megamenu .megamenu-header a.megamenu-header-title-link {
+	text-transform: uppercase;
+ }
+
+ .megamenu .megamenu-header a.megamenu-header-title-link:hover {
+	text-decoration: none;	
+ }
+ 
+ /* Megamenu sublist */
+ .megamenu__nav-list .megamenu__nav-sub {
+ 	display: none;
+ 	left: 99.8%;
+ 	top: 33px;
+ 	padding-left: 10px;
+ 	height: 479px;
+ 	width: 597px;
+ 	position: absolute;
+ 	background-color: #fff;
+ 	border-top: 1px solid #e9e9e9;
+ 	border-right: 1px solid #e9e9e9;
+ 	border-bottom: 1px solid #e9e9e9;
+ 	border-left: 1px solid #e9e9e9;
+ }
+
+ .megamenu__nav-list .megamenu__nav-sub img {
+	/*position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;*/
+ }
+
+ .megamenu__nav-list .megamenu__nav-sub .megamenu__nav-sub-content {
+	display: table;
+	width: 100%;
+ }
+
+ .megamenu__nav-list .megamenu__nav-sub .megamenu__nav-sub-list,
+ .megamenu__nav-list .megamenu__nav-sub .megamenu__nav-sub-promotion {
+	display: table-cell;
+ }
+
+ .megamenu__nav-list .megamenu__nav-sub .megamenu__nav-sub-list {
+ 	padding-left: 20px;
+ }
+
+ .megamenu__nav-list .megamenu__nav-item:hover .megamenu__nav-sub {
+	display: block;
+ }
+
+ .megamenu__nav-sub .megamenu__nav-sub-list .megamenu__nav-sub-list-item {
+ 	list-style: none;
+ 	font-weight: normal;
+ 	padding-top: 2px;
+ 	padding-bottom: 2px;
+ }
+
+ .hotline-wrapper {
+	margin-top: 10px;
+ }
+
+ .hotline-wrapper i.fa {
+ 	color: #58B712;
+ }
+
+ .hotline-wrapper span.hotline-title,
+ .hotline-wrapper span.hotline-number {
+ 	font-weight: bold;
+ }
+
+ .hotline-wrapper span.hotline-title {
+ 	color: #b3b3b3;
+ }
+
+ /* Single bookview */
+ .book-item-viewport {
+ 	margin-top: 40px;
+ }
+ 
+ .book-preview .book-cover-preview .book-cover {
+ 	width: 240px;
+ 	height: auto;
+ 	/*margin-left: 30px;*/
+ 	/* Centering img within it's parent div */
+ 	display: table;
+ 	margin: 0 auto;
+ 	/* end centering */
+ 	box-shadow: 0px 20px 50px -25px black;
+ }
+
+ .book-detail-info .information-header,
+ .book-detail-info .details {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+ }
+
+ .book-detail-info .information-header a {
+	color: #bf132b !important;
+ }
+
+ .book-detail-info .information-header .book-header .book-title {
+ 	margin-top: 5px;
+ }
+
+ .book-detail-info .information-header .book-author,
+ .book-detail-info .information-header .book-ratings,
+ .book-detail-info .information-header .book-feature-badge-wrapper {
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ }
+
+ .book-detail-info .information-header .book-feature-badge-wrapper .feature-badge {
+ 	padding: 4px 8px;
+ 	margin-right: 8px;
+ 	background-color: #E47911;
+ 	color: #fff;
+ 	border-radius: 2px;
+ 	font-weight: bold;
+ }
+
+ .book-detail-info .details .detail-item {
+ 	margin-bottom: 5px;
+ }
+
+ .book-detail-info .details .detail-item .detail-item-title {
+	font-weight: bold;
+ }
+
+ .book-detail-info .descriptions .book-description .description-text {
+ 	font-size: 14px;
+ }
+ /* Styles for Order rightCol */
+ .order {
+	background-color: #fff;
+	border-radius: 6px;
+	border: 4px solid #ccc;
+	padding: 15px;
+ }
+
+ .order p {
+ 	margin-bottom: 0;
+ }
+ 
+ .order .order-wrapper .price-wrapper {
+	margin-bottom: 8px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+ }
+
+ .order .order-wrapper .price-wrapper .price-region h5 {
+	margin-top: 0;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+ }
+
+ .order .order-wrapper .price-wrapper .price-region .price {
+	font-weight: 400;
+	font-size: 32px;
+	color: #bf132b;
+	margin-bottom: 0px;
+ }
+
+ .order .order-wrapper .price-wrapper .discount-info p {
+	font-size: 12px;
+	color: #666;
+ }
+
+ .order .order-wrapper .price-wrapper .discount-info .from .from-price {
+ 	font-weight: bold;
+ 	text-decoration: line-through;
+ }
+
+ .order .item-status-wrapper {
+	margin-bottom: 10px;
+ }
+
+ .order .item-status-wrapper .status {
+	margin-bottom: 5px;
+ }
+
+ .order .item-status-wrapper .status p {
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ }
+
+ p.in-stock {
+	color: #008A4F;
+ }
+
+ .order	.add-to-cart-wrapper .add-to-cart .cart-btn {
+ 	border-color: #bf132b;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	background: linear-gradient(to top, #A51A2D,#C12F45);
+	padding: 6px 12px;
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+	border-radius: 0px;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.25);
+	z-index: 3;
+	outline: none;
+ }
+
+ .order	.add-to-cart-wrapper .add-to-cart .cart-btn:hover {
+ 	background: linear-gradient(to bottom, #A51A2D,#C12F45);
+ }
+
+ .order	.add-to-cart-wrapper .cart-form .quantity,
+ .order	.add-to-cart-wrapper .cart-form .add-to-cart {
+ 	display: inline-block;
+ 	width: 40%;
+ }
+
+ .order	.add-to-cart-wrapper .cart-form .quantity {
+	margin-right: 15px;
+	padding-right: 10px;
+ }
+
+ .order	.add-to-cart-wrapper .cart-form .quantity-input {
+ 	width: 105px;
+ 	padding: 5px 6px 5px 6px;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ 	border: 1px solid #ccc;
+ 	box-shadow: 0px 0px 8px #e3e3e3 inset;
+ 	outline: none;
+ 	vertical-align: middle;
+ 	text-align: center;
+ }
+
+ .order	.add-to-cart-wrapper .cart-form input::-webkit-placeholder,
+ .order	.add-to-cart-wrapper .cart-form input:-moz-placeholder,
+ .order	.add-to-cart-wrapper .cart-form input::-moz-placeholder,
+ .order	.add-to-cart-wrapper .cart-form input:-ms-placeholder {
+ 	font-weight: normal;
+ 	font-style: 12px;
+ }
+
+/* Customer Review section */
+ .top-review-wrapper p{
+ 	font-weight: bold;
+ }
+
+ .top-review-wrapper .bubble-wrapper {
+	display: inline-block;
+	width: 48%;
+ }
+
+ .top-review-wrapper .right {
+ 	margin-left: 15px;
+ 	/*padding-top: 25px;*/
+ }
+
+
+ .top-review-wrapper .review-quote-bubble {
+ 	padding: 14px;
+ 	border-radius: 4px;
+ 	background-color: #eee;
+ 	
+ }
+
+ .top-review-wrapper .review-quote-bubble .left {
+ 	float: left;
+ }
+
+ .top-review-wrapper .review-quote-bubble .right {
+ 	float: right;
+ }
+
+ .top-review-wrapper .review-qoute-bubble-arrow {
+ 	position: relative;
+ 	content: "";
+ }
+
+ .top-review-wrapper .review-qoute-bubble-arrow:before {
+ 	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+	left: 5%;
+	bottom: -20px;
+	border-top: 10px solid #eee;
+ }
+
+ .top-review-wrapper .review-qoute-author {
+ 	margin-left: 12%;
+ 	padding-top: 4px;
  }

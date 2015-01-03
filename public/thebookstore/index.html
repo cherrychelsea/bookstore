@@ -14,6 +14,7 @@
 	    <link rel="stylesheet" href="fp/css/flickerplate.css">
 		<!-- script -->
 		<script src="js/jquery.js"></script>
+		<script src="js/helper.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -74,8 +75,8 @@
 					    <form action="post" id="navSearchForm" class="navbar-search col-md-5">
 					    	<div class="input-group">
 								<div class="input-group-btn _search-select">
-									<button type="button" class="btn btn-default dropdown-toggle _search-all" data-toggle="dropdown">
-										All <span><i class="fa fa-lg fa-angle-down"></i></span>
+									<button type="button" class="btn btn-default dropdown-toggle _search-all" data-toggle="dropdown" name="category-chooser" id="categoryChooser">
+										All <span><i class="fa fa-angle-down"></i></span>
 									</button>
 									<ul class="dropdown-menu _search-dropdown">
 										<li>
@@ -172,85 +173,141 @@
 							<div class="left-sidebar">
 								<div class="row">
 									<!-- Categories -->
-									<div class="categories">
-										<div class="categories-header">
-											<h4 class="header"><i class="fa fa-lg fa-bars"></i>Categories</h4>
+									<div class="categories megamenu">
+										<div class="categories-header megamenu-header">
+											<h4 class="header megamenu-header-title"><i class="fa fa-lg fa-bars"></i>Categories</h4>
 										</div>
 										<div class="categories-list">
-											<ul class="category-list">
-												<li class="category-item" role="presentation">
+											<ul class="category-list megamenu__nav-list">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Art &amp; Photography</a>													
+														<a href="" class="megamenu__nav-item-link">Art &amp; Photography</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+														<div class="megamenu__nav-sub">
+															<div class="megamenu__nav-sub-header">
+																<h4 class="megamenu__nav-sub-title">Art &amp; Photography </h4>
+															</div>
+															<ul class="megamenu__nav-sub-list">
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Architecture</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Collections, Catalogs &amp; Exhibitions</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Decorative Arts &amp; Design</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Drawing </a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Fashion</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Graphic Design</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">History &amp; Criticism</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Individual Artists</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Music</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Painting</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Performing Arts</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Photography &amp; Video</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Religious</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Sculpture</a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Study &amp; Teaching </a>
+																</li>
+																<li class="megamenu__nav-sub-list-item">
+																	<a href="" class="megamenu__nav-sub-list-item-link">Vehicle Pictorials</a>
+																</li>
+															</ul>
+														</div>													
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Business &amp; Money</a>
+														<a href="" class="megamenu__nav-item-link">Business &amp; Money</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Children's Books</a>
+														<a href="" class="megamenu__nav-item-link">Children's Books</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Computers &amp; Technology</a>
-														<span class="pull-right"><i class="fa fa-angle-right"></i></span>
+														<a href="" class="megamenu__nav-item-link">Computers &amp; Technology</a>
+														<!-- <span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span> -->s
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Cookbooks, Foods &amp; Wine</a>
+														<a href="" class="megamenu__nav-item-link">Cookbooks, Foods &amp; Wine</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Education &amp; Teaching</a>
+														<a href="" class="megamenu__nav-item-link">Education &amp; Teaching</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Engineering &amp; Transportation</a>
+														<a href="" class="megamenu__nav-item-link">Engineering &amp; Transportation</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Comics, Graphics &amp; Novels</a>
+														<a href="" class="megamenu__nav-item-link">Comics, Graphics &amp; Novels</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">History</a>
+														<a href="" class="megamenu__nav-item-link">History</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Law</a>
+														<a href="" class="megamenu__nav-item-link">Law</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Medical Books</a>
+														<a href="" class="megamenu__nav-item-link">Medical Books</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Health, Fitness &amp; Dieting</a>
+														<a href="" class="megamenu__nav-item-link">Health, Fitness &amp; Dieting</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Humors &amp; Entertainment</a>
+														<a href="" class="megamenu__nav-item-link">Humors &amp; Entertainment</a>
 													</div>
 												</li>
-												<li class="category-item" role="presentation">
+												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
-														<a href="">Travel &amp; Discovery</a>
+														<a href="" class="megamenu__nav-item-link">Travel &amp; Discovery</a>
 													</div>
 												</li>
 											</ul>
-											<span class="show-all">Show all <i class="fa fa-angle-down"></i></span>
+											<!-- <span class="show-all">Show all <i class="fa fa-angle-down"></i></span> -->
 											<div class="hidden"></div>
 										</div>
 									</div> <!-- end of Categories -->
@@ -1068,5 +1125,6 @@
 		<!-- Image Slider FP -->
 		<script src="fp/js/min/flickerplate.min.js"></script>
 		<script src="js/slider.js"></script>
+		<script src="js/bookstore.js"></script>
 	</body>
 </html>
