@@ -14,7 +14,7 @@
  }
 
  p, li, li a {
-	color: #252c3cs;
+	color: #252c3c;
  }
 
  a {
@@ -302,7 +302,7 @@ div.marginbottom-20 {
 .body-content {
 	padding-bottom: 60px;
 	padding-top: 20px;
-	background-color: #fcfcfc;
+	background-color: #fff;
 }
 
 .body-content .main {
@@ -820,8 +820,8 @@ div.marginbottom-20 {
 	padding-right: 10px;
  }
 
- .order	.add-to-cart-wrapper .cart-form .quantity-input {
- 	width: 105px;
+ .order	.add-to-cart-wrapper .cart-form .quantity-input, .cart-input {
+ 	width: 100px;
  	padding: 5px 6px 5px 6px;
  	font-size: 14px;
  	font-weight: bold;
@@ -955,13 +955,15 @@ div.marginbottom-20 {
 
 /* end of login page */
 
-.signin .signin-header {
+.signin .signin-header,
+.sc .sc-header {
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 	border-bottom: 1px dotted #ccc;
 }
 
-.signin .signin-header h2 {
+.signin .signin-header h2,
+.main .sc-wrapper .sc-header-box .sc-header {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	color: #bf132b;
@@ -999,3 +1001,176 @@ div.marginbottom-20 {
 	display: inline-block;
 	margin-left: 15px;
 }
+
+
+/**
+ * Shopping Cart
+ */
+ .main .sc-region {
+	padding-left: 0px;
+ }
+
+ .sc-wrapper h2.sc-header {
+ 	margin-top: 0px;
+ 	padding-bottom: 10px;
+ 	border-bottom: 1px dotted #ccc;
+ }
+
+ .sc-box {
+ 	background-color: #fff;
+ 	border: 1px solid #ccc;
+ 	margin-top: 20px;
+ 	margin-bottom: 30px;
+ 	padding-bottom: 20px;
+ }
+
+ .sc-box .sc-header {
+ 	background-color: #f4f4f4;
+ }
+
+ .sc-box .sc-header .row {
+ 	padding: 8px;
+ }
+
+ .sc-box .sc-header .row p {
+ 	margin-bottom: 0px;
+ 	font-weight: bold;
+ }
+
+ .sc-box .sc-list-wrapper {
+	padding: 15px;
+ }
+
+ .sc-box ul.sc-list {
+ 	padding-left: 0px;
+ }
+
+ .sc-box ul.sc-list li.sc-list-item {
+ 	list-style: none;
+ 	padding-left: 0px;
+ 	padding-bottom: 10px;
+ 	padding-top: 10px;
+ 	margin-bottom: 10px;
+ 	border-bottom: 1px dotted #ccc;
+ }
+
+ .sc-box .no-item p {
+ 	text-align: center;
+ 	font-weight: bold;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ }
+
+ /*Product thumbnail */
+ .sc-item .product-box .product-img .product-thumb {
+ 	width: 84px;
+ 	height: auto;
+ }
+
+ .sc-item .product-box .product-img,
+ .sc-item .product-box .product-info {
+ 	display: inline-block;
+ }
+
+ .sc-item .product-box .product-img {
+	margin-right: 15px;
+ }
+
+ .sc-item .product-box .product-info {
+ 	max-width: 280px;
+ }
+
+ .sc-item .product-box .product-img .product-thumb {
+ 	border: 1px solid #ccc;
+ 	box-shadow: 0px 0px 10px rgba(0,0,0,0.075);
+ }
+
+ .sc-item .product-box .product-info {
+ 	vertical-align: top;
+ }
+
+ .sc-item .product-box .product-info .product-title .title,
+ .subtotal-box .subtotal p {
+ 	font-weight: bold;
+ 	font-size: 16px;
+ 	color: #bf132b !important;
+ 	margin-top: 0px;
+ }
+
+ .sc-item .product-box .product-info p,
+ .unit-price-box .save-fig p {
+ 	color: #777;
+ }
+
+ .sc-item .product-box .product-info p.status {
+ 	text-transform: uppercase;
+ }
+
+ .sc-item .product-box .product-info p.in-stock {
+ 	color: #008A4F; 	
+ }
+
+ /* Quantity box */
+ .sc-list-item .quantity-box .update-cart {
+	margin-top: 10px;
+ }
+
+ .unit-price-box .unit-price p {
+ 	font-weight: bold;
+ 	font-size: 16px;
+ }
+
+ /* Checkout box */
+ .checkout-box .costs {
+ 	margin-left: 35px;
+ 	margin-right: 35px;
+ 	border-bottom: 1px dotted #ccc;
+ }
+ .checkout-box .costs div {
+ 	display: block;
+ }
+
+ .checkout-box .costs div p {
+ 	font-size: 16px;
+ 	font-weight: bold;
+ }
+
+ .checkout-box .costs .total-cost {
+ 	color: #bf132b;
+ }
+
+ .checkout-button {
+ 	margin-top: 20px;
+ }
+
+ /* Customer Helper */
+ .customer-support-box .support-number-box {
+ 	background-color: #fff;
+ 	border: 1px solid #ccc;
+ 	padding: 10px;
+ }
+
+ .customer-support-box .support-number-box p {
+ 	text-align: center;
+ 	margin-bottom: 3px;
+ }
+
+ .customer-support-box .support-number-title {
+ 	font-weight: bold;
+ 	font-size: 15px;
+ }
+
+ .customer-support-box .support-number {
+ 	font-weight: bold;
+ 	font-size: 22px;
+ 	color: #bf132b;
+ }
+
+ .customer-support-box .support-email-box {
+ 	background-color: #cecece;
+ 	padding: 10px;
+ }
+
+ .customer-support-box .support-email-box p {
+ 	margin-bottom: 0px;
+ }

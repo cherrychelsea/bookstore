@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Cart View | Bookstore</title>
+	    <!-- Boostrap -->
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/custom.css">
+	    <!-- Font awesome -->
+	    <link rel="stylesheet" href="plugins/fa/css/font-awesome.css">
+	    <link rel="stylesheet" href="plugins/fp/css/flickerplate.css">
+		<!-- script -->
+		<script src="js/jquery.js"></script>
+		<script src="js/helper.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Header -->
+			<div class="header">
+				<!-- Topbar -->
+				<div class="topbar">
+					<div class="container">
+						<!-- Topbar Navigation -->
+						<ul class="loginbar pull-right">
+							<li class="social facebook">
+								<i class="fa fa-facebook-square"></i>
+							</li>
+							<li class="social google-plus">
+								<i class="fa fa-google-plus-square"></i>
+							</li>
+							<li class="social youtube">
+								<i class="fa fa-youtube-square"></i>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="login.html">Log in</a>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#">My Order</a>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#">Help</a>
+							</li>
+							<li class="topbar-divider"></li>
+							<li>
+								<a href="#" class="dropdown-toggle" type="button" id="languageDropdownMenu" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-lg fa-globe"></i> Languages <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu" id="languageSelector" role="menu" aria-labelledby="languageDropdownMenu">
+									<li role="presentation"><span value="en">English</span></li>
+									<li role="presentation"><span value="vi">Vietnamese</span></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- End Topbar Navigation -->		
+					</div>
+				</div> <!-- end of Topbar -->
+				<!-- Navbar -->
+				<div class="navbar navbar-default thebookstore-navbar" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+		                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		                        <span class="sr-only">Toggle navigation</span>
+		                        <span class="fa fa-bars"></span>
+		                    </button>
+		                    <a class="navbar-brand" href="index.html">
+		                        <img id="logo-header" class="brand-img" src="img/brand/thebookstore_logo.png" alt="The Book store">
+		                    </a>
+		                </div>
+		                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    <!-- Navbar Search -->
+					    <form action="post" id="navSearchForm" class="navbar-search col-md-5">
+					    	<div class="input-group">
+								<div class="input-group-btn _search-select">
+									<button type="button" class="btn btn-default dropdown-toggle _search-all" data-toggle="dropdown" name="category-chooser" id="categoryChooser">
+										All <span><i class="fa fa-angle-down"></i></span>
+									</button>
+									<ul class="dropdown-menu _search-dropdown">
+										<li>
+											<a href="">All Categories</a>													
+										</li>
+										<li>
+											<a href="">Art &amp; Photography</a>													
+										</li>
+										<li>
+											<a href="">Business &amp; Money</a>
+										</li>
+										<li>
+											<a href="">Children's Books</a>
+										</li>
+										<li>
+											<a href="">Computers &amp; Technology</a>
+										</li>
+										<li>
+											<a href="">Cookbooks, Foods &amp; Wine</a>
+										</li>
+										<li>
+											<a href="">Education &amp; Teaching</a>
+										</li>
+										<li>
+											<a href="">Engineering &amp; Transportation</a>
+										</li>
+										<li>
+											<a href="">Comics, Graphics &amp; Novels</a>
+										</li>
+										<li>
+											<a href="">History</a>
+										</li>
+										<li>
+											<a href="" class="pointer">Law</a>
+										</li>
+										<li>
+											<a href="">Medical Books</a>
+										</li>
+										<li>
+											<a href="">Health, Fitness &amp; Dieting</a>
+										</li>
+										<li>
+											<a href="">Humors &amp; Entertainment</a>
+										</li>
+										<li>
+											<a href="">Travel &amp; Discovery</a>
+										</li>
+									</ul>
+								</div>
+								<input type="text" id="search" autocomplete="on" class="form-control _input-search" name="q" value="" placeholder="Search books, novels, audio,...">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-default _search-btn">Search</button>
+								</span>
+							</div>
+					    </form>
+
+					    <!-- end of Navbar Search -->
+					      <ul class="nav navbar-nav navbar-right">
+					      	<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								<i class="fa fa-lg fa-bell"></i> Notification
+					          </a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					          </ul>
+					        </li>
+					        <li>
+					        	<a href=""><i class="fa fa-lg fa-map-marker"></i> Check Order Status</a>
+					        </li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+								<i class="fa fa-lg fa-shopping-cart"></i>	Your cart
+					          </a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					          </ul>
+					        </li>
+					      </ul>
+					    </div>
+					</div>
+				</div> <!-- end of Navbar -->
+				<!-- Navigation Menu -->
+			</div> <!-- end of Header -->
+			<!-- Body content -->
+			<div class="body-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-2 col-lg-3  megamenu-wrapper">
+							<div class="left-sidebar">
+								<div class="row">
+									<!-- Categories -->
+									<div class="categories megamenu">
+										<div class="categories-header megamenu-header" id="categoryMenu">
+											<a href="" class="megamenu-header-title-link"><h4 class="header megamenu-header-title"><i class="fa fa-lg fa-bars"></i>Categories</h4></a>
+										</div>
+										<div class="categories-list megamenu__list exit-on-out">
+											<ul class="category-list megamenu__nav-list">
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Art &amp; Photography</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+														<div class="megamenu__nav-sub">
+															<div class="megamenu__nav-sub-header">
+																<h4 class="megamenu__nav-sub-title">Art &amp; Photography </h4>
+															</div>
+															<div class="megamenu__nav-sub-content">
+																<ul class="megamenu__nav-sub-list">
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Architecture</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Collections, Catalogs &amp; Exhibitions</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Decorative Arts &amp; Design</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Drawing </a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Fashion</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Graphic Design</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">History &amp; Criticism</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Individual Artists</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Music</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Painting</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Performing Arts</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Photography &amp; Video</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Religious</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Sculpture</a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Study &amp; Teaching </a>
+																	</li>
+																	<li class="megamenu__nav-sub-list-item">
+																		<a href="" class="megamenu__nav-sub-list-item-link">Vehicle Pictorials</a>
+																	</li>
+																</ul>
+																<!-- <div class="megamenu__nav-sub-promotion">
+																	<img src="img/thumb/megamenu_bg.png" alt="">
+																</div> -->
+															</div>
+														</div>													
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Business &amp; Money</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Children's Books</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Computers &amp; Technology</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Cookbooks, Foods &amp; Wine</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Education &amp; Teaching</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Engineering &amp; Transportation</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Comics, Graphics &amp; Novels</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">History</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Law</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Medical Books</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Health, Fitness &amp; Dieting</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Humors &amp; Entertainment</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+												<li class="category-item megamenu__nav-item" role="presentation">
+													<div class="item-link">
+														<a href="" class="megamenu__nav-item-link">Travel &amp; Discovery</a>
+														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+
+													</div>
+												</li>
+											</ul>
+											<!-- <span class="show-all">Show asll <i class="fa fa-angle-down"></i></span> -->
+											<!-- <div class="hidden"></div> -->
+										</div>
+									</div> <!-- end of Categories -->
+								</div>
+							</div> <!-- end of Left-Sidebar -->
+						</div>
+						<div class="col-md-5">
+							<!-- Small ad, promotion can be place here -->
+						</div>
+						<div class="col-md-4 pull-right">
+							<div class="hotline-wrapper pull-right">
+								<i class="fa fa-lg fa-phone-square"></i>
+								<span class="hotline-title">Hotline: </span>
+								<span class="hotline-number">1900-0099</span>
+								<span class="hotline-active-time">8h - 21h daily (include Sat &amp; Sun)</span>
+							</div>
+						</div>
+						<!-- <hr class="divider" style="position: absolute; margin-top: 35px;"> -->
+					</div>
+					<!-- Shopping Cart Region -->
+					<div class="row main">
+						<!-- Shopping cart box -->
+						<div class="col-md-9 sc-region">
+							<div class="sc-wrapper">
+								<div class="sc-header-box">
+									<h2 class="sc-header">Shopping Cart</h2>
+								</div>
+								<div class="sc-box">
+									<div class="sc-header">
+										<div class="row">
+											<div class="col-md-6">
+												<p>Product</p>
+											</div>
+											<div class="col-md-2">
+												<p>Quantity</p>
+											</div>
+											<div class="col-md-2">
+												<p>Unit price</p>
+											</div>
+											<div class="col-md-2">
+												<p>Subtotal</p>
+											</div>
+										</div>
+									</div> <!-- end of Shopping cart header -->
+									<div class="hidden no-item">
+										<p>There is no item in your shopping cart.</p>
+									</div>
+									<div class="sc-list-wrapper">
+										<form action="" class="cart">
+											<ul class="sc-list">
+												<!-- List Item 1 -->
+												<li class="sc-list-item">
+													<div class="row">
+														<!-- Item Product -->
+														<div class="col-md-6">
+															<div class="item-product sc-item">
+																<div class="product-box">
+																	<!-- Product Image -->
+																	<div class="product-img">
+																		<img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="" class="product-thumb">
+																	</div> <!-- end of Product Image -->
+																	<!-- Product Info -->
+																	<div class="product-info">
+																		<div class="product-title">
+																			<h5 class="title">See how you small: A Novel</h5>
+																		</div>
+																		<div class="product-author">
+																			<p class="author">by Scott Blackwood </p>
+																		</div>
+																		<div class="product-format">
+																			<p class="format">Paperpack</p>
+																		</div>
+																		<div class="product-status">
+																			<p class="status in-stock">In Stock</p>
+																		</div>
+																		<div class="cart-item-remove">
+																			<p class="remove-item">
+																				<i class="fa fa-trash-o"></i>
+																				<a href="" class="remove-item-link">Delete this item</a>
+																			</p>
+																		</div>
+																	</div> <!-- end of Product Info -->
+																</div> <!-- end of product-box -->
+															</div>
+														</div><!-- end of Item Product -->
+														<!-- Item Quantity -->
+														<div class="col-md-2">
+															<div class="quantity-box">
+																<div class="quantity-input">
+																	<input type="text" class="cart-input" style="width: 60%;">
+																</div>
+																<div class="update-cart">
+																	<a href="" class="update-cart-link">Update cart</a>
+																</div>
+															</div>
+														</div> <!-- end of Item Quantity -->
+														<!-- Item Unit Price -->
+														<div class="col-md-2">
+															<div class="unit-price-box">
+																<div class="unit-price">
+																	<p><span class="unit-price-fig">$ 18.75</span></p>
+																</div>
+																<div class="save-fig">
+																	<p>Save <span class="save-up">15%</span></p>
+																</div>
+															</div>
+														</div> <!-- end of Item Unit Price -->
+														<!-- Item Subtotal -->
+														<div class="col-md-2">
+															<div class="subtotal-box">
+																<div class="subtotal">
+																	<p>$18.75</p>
+																</div>
+															</div>
+														</div> <!-- end of Item Subtotal -->
+													</div>
+												</li> <!-- end of List Item 1 -->
+
+												<!-- List Item 2 -->
+												<li class="sc-list-item">
+													<div class="row">
+														<!-- Item Product -->
+														<div class="col-md-6">
+															<div class="item-product sc-item">
+																<div class="product-box">
+																	<!-- Product Image -->
+																	<div class="product-img">
+																		<img src="img/thumb/books/b_winter_in_white.jpg" alt="" class="product-thumb">
+																	</div> <!-- end of Product Image -->
+																	<!-- Product Info -->
+																	<div class="product-info">
+																		<div class="product-title">
+																			<h5 class="title">Winter in White: A Mini-Popup Treat</h5>
+																		</div>
+																		<div class="product-author">
+																			<p class="author">by Robert Sabuda </p>
+																		</div>
+																		<div class="product-format">
+																			<p class="format">Hardcover</p>
+																		</div>
+																		<div class="product-status">
+																			<p class="status in-stock">In Stock</p>
+																		</div>
+																		<div class="cart-item-remove">
+																			<p class="remove-item">
+																				<i class="fa fa-trash-o"></i>
+																				<a href="" class="remove-item-link">Delete this item</a>
+																			</p>
+																		</div>
+																	</div> <!-- end of Product Info -->
+																</div> <!-- end of product-box -->
+															</div>
+														</div><!-- end of Item Product -->
+														<!-- Item Quantity -->
+														<div class="col-md-2">
+															<div class="quantity-box">
+																<div class="quantity-input">
+																	<input type="text" class="cart-input" style="width: 60%;">
+																</div>
+																<div class="update-cart">
+																	<a href="" class="update-cart-link">Update cart</a>
+																</div>
+															</div>
+														</div> <!-- end of Item Quantity -->
+														<!-- Item Unit Price -->
+														<div class="col-md-2">
+															<div class="unit-price-box">
+																<div class="unit-price">
+																	<p><span class="unit-price-fig">$ 59.12</span></p>
+																</div>
+																<div class="save-fig">
+																	<p>Save <span class="save-up">15%</span></p>
+																</div>
+															</div>
+														</div> <!-- end of Item Unit Price -->
+														<!-- Item Subtotal -->
+														<div class="col-md-2">
+															<div class="subtotal-box">
+																<div class="subtotal">
+																	<p>$113.75</p>
+																</div>
+															</div>
+														</div> <!-- end of Item Subtotal -->
+													</div>
+												</li> <!-- end of List Item 2 -->
+
+												<!-- List Item 3 -->
+												<li class="sc-list-item">
+													<div class="row">
+														<!-- Item Product -->
+														<div class="col-md-6">
+															<div class="item-product sc-item">
+																<div class="product-box">
+																	<!-- Product Image -->
+																	<div class="product-img">
+																		<img src="img/thumb/books/b_creative_workshop.jpg" alt="" class="product-thumb">
+																	</div> <!-- end of Product Image -->
+																	<!-- Product Info -->
+																	<div class="product-info">
+																		<div class="product-title">
+																			<h5 class="title">Creative Workshop: 80 Challenges to Sharpen Your Design Skills</h5>
+																		</div>
+																		<div class="product-author">
+																			<p class="author">by David Sherwin </p>
+																		</div>
+																		<div class="product-format">
+																			<p class="format">Paperback</p>
+																		</div>
+																		<div class="product-status">
+																			<p class="status in-stock">In Stock</p>
+																		</div>
+																		<div class="cart-item-remove">
+																			<p class="remove-item">
+																				<i class="fa fa-trash-o"></i>
+																				<a href="" class="remove-item-link">Delete this item</a>
+																			</p>
+																		</div>
+																	</div> <!-- end of Product Info -->
+																</div> <!-- end of product-box -->
+															</div>
+														</div><!-- end of Item Product -->
+														<!-- Item Quantity -->
+														<div class="col-md-2">
+															<div class="quantity-box">
+																<div class="quantity-input">
+																	<input type="text" class="cart-input" style="width: 60%;">
+																</div>
+																<div class="update-cart">
+																	<a href="" class="update-cart-link">Update cart</a>
+																</div>
+															</div>
+														</div> <!-- end of Item Quantity -->
+														<!-- Item Unit Price -->
+														<div class="col-md-2">
+															<div class="unit-price-box">
+																<div class="unit-price">
+																	<p><span class="unit-price-fig">$26.68</span></p>
+																</div>
+																<div class="save-fig">
+																	<p>Save <span class="save-up">15%</span></p>
+																</div>
+															</div>
+														</div> <!-- end of Item Unit Price -->
+														<!-- Item Subtotal -->
+														<div class="col-md-2">
+															<div class="subtotal-box">
+																<div class="subtotal">
+																	<p>$26.68</p>
+																</div>
+															</div>
+														</div> <!-- end of Item Subtotal -->
+													</div>
+												</li> <!-- end of List Item 3 -->
+											</ul>
+											<!-- Cart checkout -->
+											<div class="cart-checkout">
+												<div class="row">
+													<div class="col-md-7">
+														<div class="checkout-note">
+															<div class="note-box">
+																<p class="note-header">Notice</p>
+																<span class="note">The price and availability of items at thebookstore.com are subject to change. The Cart is a temporary place to store a list of your items and reflects each item's most recent price</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-5">
+														<div class="checkout-box">
+															<div class="costs">
+																<div class="delivery-cost-box">
+																	<p class="">Deliver cost: <span class="delivery-cost pull-right">$15.91</span></p>
+																</div>
+																<div class="total-cost-box">
+																	<p class="">Total paid: <span class="total-cost pull-right">$164.32</span></p>
+																</div>
+															</div>
+															<div class="checkout-button">
+																<div class="row">
+																	<div class="col-sm-4">
+																		<div class="clear-cart-box">
+																			<a href="" class="btn btn-default btn-blue" style="color: #fff !important;">Clear cart</a>
+																		</div>
+																	</div>
+																	<div class="col-sm-8">
+																		<div class="checkout-cart-box">
+																			<button type="submit" class="btn btn-default btn-red">Process to Checkout</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div> <!-- end of Cart Checkout -->
+										</form>
+									</div>
+								</div>
+							</div>
+						</div> <!-- end of shopping cart box -->
+						<!-- Checkout process box -->
+						<div class="col-md-3">
+							<div class="customer-helper">
+								<div class="customer-support-box">
+									<div class="support-number-box">
+										<p class="support-number-title">Support center across the country</p>
+										<p class="support-number"><i class="fa fa-phone-square"></i>   1900-0099</p>
+									</div>
+									<div class="support-email-box">
+										<p>Email: <span class="support-email"><a href="">support@thebookstore.com</a> </span></p>
+									</div>
+								</div>
+								<div class="faq-box">
+									
+								</div>
+							</div>
+						</div> <!-- end of checkout process box -->
+					</div>
+					<!-- end of shopping cart region -->
+
+					<!-- Similar bought -->
+					<div class="row product-similar-bought marginbottom-20">
+						<div class="similar-header">
+							<h4 class="similar-title">
+								Customers who bought this also bought
+							</h4>
+							<div class="col-md-12">
+								<div class="row main-row">
+									<div class="col-md-2">
+										<div class="book-item">
+											<a href="#">
+												<div class="book-visual">
+													<div class="book-thumb">
+														<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+													</div>
+												</div>
+											</a>
+											<div class="book-meta">
+												<div class="title">
+													<a href="">
+														<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
+													</a>
+												</div>
+												<div class="author">
+													<span class="book-author">Scott Blackwood</span>
+												</div>
+												<div class="rate-comment">
+													<div class="rate-box">
+														<div class="ratings" style="width: 75%;"></div>
+													</div>
+													<div class="comment-box">
+														<span>(6 nhận xét)</span>
+													</div>
+												</div>
+												<div class="format">
+													<span class="book-format">Hardcover</span>
+												</div>
+												<div class="price">
+													<span class="price-currency">$</span>
+													<span class="book-price">18.63</span>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Item 1 -->
+
+									<div class="col-md-2">
+										<div class="book-item">
+											<a href="#">
+												<div class="book-visual">
+													<div class="book-thumb">
+														<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+													</div>
+												</div>
+											</a>
+											<div class="book-meta">
+												<div class="title">
+													<a href="">
+														<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
+													</a>
+												</div>
+												<div class="author">
+													<span class="book-author">Scott Blackwood</span>
+												</div>
+												<div class="rate-comment">
+													<div class="rate-box">
+														<div class="ratings" style="width: 75%;"></div>
+													</div>
+													<div class="comment-box">
+														<span>(6 nhận xét)</span>
+													</div>
+												</div>
+												<div class="format">
+													<span class="book-format">Hardcover</span>
+												</div>
+												<div class="price">
+													<span class="price-currency">$</span>
+													<span class="book-price">18.63</span>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Item 1 -->
+
+									<div class="col-md-2">
+										<div class="book-item">
+											<a href="#">
+												<div class="book-visual">
+													<div class="book-thumb">
+														<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+													</div>
+												</div>
+											</a>
+											<div class="book-meta">
+												<div class="title">
+													<a href="">
+														<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
+													</a>
+												</div>
+												<div class="author">
+													<span class="book-author">Scott Blackwood</span>
+												</div>
+												<div class="rate-comment">
+													<div class="rate-box">
+														<div class="ratings" style="width: 75%;"></div>
+													</div>
+													<div class="comment-box">
+														<span>(6 nhận xét)</span>
+													</div>
+												</div>
+												<div class="format">
+													<span class="book-format">Hardcover</span>
+												</div>
+												<div class="price">
+													<span class="price-currency">$</span>
+													<span class="book-price">18.63</span>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Item 1 -->
+
+									<div class="col-md-2">
+										<div class="book-item">
+											<a href="#">
+												<div class="book-visual">
+													<div class="book-thumb">
+														<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+													</div>
+												</div>
+											</a>
+											<div class="book-meta">
+												<div class="title">
+													<a href="">
+														<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
+													</a>
+												</div>
+												<div class="author">
+													<span class="book-author">Scott Blackwood</span>
+												</div>
+												<div class="rate-comment">
+													<div class="rate-box">
+														<div class="ratings" style="width: 75%;"></div>
+													</div>
+													<div class="comment-box">
+														<span>(6 nhận xét)</span>
+													</div>
+												</div>
+												<div class="format">
+													<span class="book-format">Hardcover</span>
+												</div>
+												<div class="price">
+													<span class="price-currency">$</span>
+													<span class="book-price">18.63</span>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Item 1 -->
+
+									<div class="col-md-2">
+										<div class="book-item">
+											<a href="#">
+												<div class="book-visual">
+													<div class="book-thumb">
+														<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+													</div>
+												</div>
+											</a>
+											<div class="book-meta">
+												<div class="title">
+													<a href="">
+														<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
+													</a>
+												</div>
+												<div class="author">
+													<span class="book-author">Scott Blackwood</span>
+												</div>
+												<div class="rate-comment">
+													<div class="rate-box">
+														<div class="ratings" style="width: 75%;"></div>
+													</div>
+													<div class="comment-box">
+														<span>(6 nhận xét)</span>
+													</div>
+												</div>
+												<div class="format">
+													<span class="book-format">Hardcover</span>
+												</div>
+												<div class="price">
+													<span class="price-currency">$</span>
+													<span class="book-price">18.63</span>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Item 1 -->
+
+									<div class="col-md-2">
+										<div class="book-item">
+											<a href="#">
+												<div class="book-visual">
+													<div class="book-thumb">
+														<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+													</div>
+												</div>
+											</a>
+											<div class="book-meta">
+												<div class="title">
+													<a href="">
+														<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
+													</a>
+												</div>
+												<div class="author">
+													<span class="book-author">Scott Blackwood</span>
+												</div>
+												<div class="rate-comment">
+													<div class="rate-box">
+														<div class="ratings" style="width: 75%;"></div>
+													</div>
+													<div class="comment-box">
+														<span>(6 nhận xét)</span>
+													</div>
+												</div>
+												<div class="format">
+													<span class="book-format">Hardcover</span>
+												</div>
+												<div class="price">
+													<span class="price-currency">$</span>
+													<span class="book-price">18.63</span>
+												</div>
+											</div>
+										</div>
+									</div> <!-- end of Item 1 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of similar bought -->
+				</div>
+			</div> <!-- end of Body Content -->
+			<!-- Footer -->
+			<div class="footer">
+				<div class="container">
+					<!-- Footer info -->
+					<div class="row footer-1">
+						<!-- About -->
+						<div class="col-md-3">
+							<div class="about footer-item">
+								<img src="img/brand/thebookstore_logo.png" alt="" class="logo-footer">
+							</div>
+							<div class="about-text">
+								<p>About theBookstore dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales. Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+							</div>
+						</div> <!-- end of About -->
+						<!-- Information -->
+						<div class="col-md-3">
+							<div class="information footer-item">
+								<div class="header">
+									<h4>Information</h4>
+								</div>
+								<ul class="information-list">
+									<li>
+										<a href="#">My Orders</a>
+									</li>
+									<li>
+										<a href="#">How to shop</a>
+									</li>
+									<li>
+										<a href="#">Deliver Info and Charges</a>
+									</li>
+									<li>
+										<a href="#">Payment Modes Accepted</a>
+									</li>
+									<li>
+										<a href="#">Help Files</a>
+									</li>
+								</ul>
+							</div>
+						</div> <!-- end of Information -->
+						<!-- Useful Links -->
+						<div class="col-md-3">
+							<div class="useful-link footer-item">
+								<div class="header">
+									<h4>Useful Links</h4>
+								</div>
+								<ul class="useful-link-list">
+									<li>
+										<a href="#">About us</a>
+									</li>
+									<li>
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="#">Term of Services</a>
+									</li>
+									<li>
+										<a href="#">Contact us</a>
+									</li>									
+								</ul>
+							</div>
+						</div> <!-- end of Useful Links -->
+						<!-- Contact Us -->
+						<div class="col-md-3">
+							<div class="contact footer-item">
+								<div class="header">
+									<h4>Contact us</h4>
+								</div>
+								<div class="contact-info">
+									<ul>
+										<li>
+											<span class="address">25, Lorem Lis Street, Orange, California, US</span>
+										</li>
+										<li>
+											<span class="phone">Phone: 800 123 3456</span>
+										</li>
+										<li>
+											<span class="fax">Fax: 800 123 3456</span>
+										</li>
+										<li>
+											<span class="email">Email: info@thebookstore.com</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div> <!-- end of Contact Us -->
+					</div> <!-- end of Footer Infor -->
+				</div>
+			</div> <!-- end of Footer -->
+			<div class="copyright-section">
+				<div class="container">
+					<!-- Copyright -->
+					<div class="row">
+						<div class="copyright">
+							<span>2014 &copy; All Rights reserved</span>
+						</div>
+						<div class="pull-right social">
+							
+						</div>
+					</div> <!-- end of Copyright -->
+				</div>
+			</div>
+		</div>
+
+		<script src="plugins/fp/js/min/modernizr-custom-v2.7.1.min.js"></script>
+		<script src="plugins/fp/js/min/hammer-v2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Image Slider FP -->
+		<script src="plugins/fp/js/min/flickerplate.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/bookstore.js"></script>
+	</body>
+</html>
