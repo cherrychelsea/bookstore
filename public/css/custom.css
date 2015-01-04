@@ -21,14 +21,6 @@
  	color: #313854 !important;
  }
 
- /* Override Bootstrap 3 defautl setting for .focused form-control */
- .input-control:focus {
-	border-color: #bf132b;
-	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #FCE1E0;
-	        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #FCE1E0;
- }
-
 /* Wrapper for page content */
 .wrapper {
 	background: none repeat scroll 0% 0% #fff;
@@ -305,10 +297,6 @@ div.marginbottom-20 {
 	background-color: #fcfcfc;
 }
 
-.body-content .main {
-	margin-top: 40px;
-}
-
 /*---- end of Body Content ----*/
 
 /**
@@ -444,8 +432,7 @@ div.marginbottom-20 {
  }
 
  .book-item .book-meta .rate-comment .rate-box,
- .book-detail-info .book-ratings .rate-box,
- .review-item .review-list-header .review-header .ratings-box {
+ .book-detail-info .book-ratings .rate-box {
  	width: 69px;
  	height: 13px;
  	float: left;
@@ -454,8 +441,7 @@ div.marginbottom-20 {
  }
 
  .book-item .book-meta .rate-comment .rate-box .ratings,
- .book-detail-info .book-ratings .rate-box .ratings,
- .review-item .review-list-header .review-header .ratings-box .ratings {
+ .book-detail-info .book-ratings .rate-box .ratings {
  	height: 13px;
  	background: url('../img/icon/product_rating_full_star.gif') repeat-x;	
  }
@@ -773,36 +759,19 @@ div.marginbottom-20 {
 	color: #008A4F;
  }
 
- .order	.add-to-cart-wrapper .add-to-cart .cart-btn, .btn-red, .btn-blue {
+ .order	.add-to-cart-wrapper .add-to-cart .cart-btn {
+ 	border-color: #bf132b;
 	color: #fff;
 	font-size: 14px;
 	text-transform: uppercase;
 	text-align: center;
+	background: linear-gradient(to top, #A51A2D,#C12F45);
 	padding: 6px 12px;
 	text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
 	border-radius: 0px;
 	box-shadow: 2px 2px 1px rgba(0,0,0,0.25);
 	z-index: 3;
 	outline: none;
- }
- 
- button i.fa {
-	margin-right: 10px;
- }
-
- .btn-red {
- 	background: linear-gradient(to top, #A51A2D,#C12F45);
- 	border-color: #bf132b;
- }
-
- .btn-red:hover, .btn-blue:hover {
- 	color: #fff;
- 	border: 1px solid transparent;
- }
-
- .btn-blue {
- 	background: linear-gradient(to top,#29427B,#657BA9);
- 	border-color: #29427b;
  }
 
  .order	.add-to-cart-wrapper .add-to-cart .cart-btn:hover {
@@ -891,111 +860,3 @@ div.marginbottom-20 {
  	margin-left: 12%;
  	padding-top: 4px;
  }
-
- .overall-rating .header p,
- .detail-rating .header p {
-	font-weight: bold;
- }
-
- .overall-rating .ratings-box {
- 	display: block;
-	width: 130px;
-	height: 26px;
-	background: url('../img/icon/ratings-blank.png') repeat-x;
- }
-
- .overall-rating .ratings-box .ratings {
- 	height: 26px;
-	background: url('../img/icon/ratings-full.png') repeat-x;
- }
-
- .detail-rating .rating-holder table {
- 	width: 80%;
- }
-
-/* .rating-region {
- 	padding-bottom: 10px;
- 	margin-bottom: 10px;
- 	border-bottom: 1px dotted #ccc;
- }*/
-
- .user-review .header h5 {
-	font-weight: bold;
- }
-
- .user-review form input,
- .user-review form textarea {
-	font-size: 13px;
- }
-
-/* Customer Review list */
-.customer-review .review-item {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.customer-review .review-list .review-item .review-header {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.customer-review .review-list .review-item .review-header span.title {
-	font-weight: bold;
-}
-
-.customer-review .review-list .review-item .review-header span.review-date {
-	color: #a3a3a3;
-}
-
-/* end of Customer Review list */
-
-/**
- * Login page
- */
-
-/* end of login page */
-
-.signin .signin-header {
-	padding-bottom: 5px;
-	margin-bottom: 15px;
-	border-bottom: 1px dotted #ccc;
-}
-
-.signin .signin-header h2 {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
-	color: #bf132b;
-}
-
-.main .col {
-	padding: 20px 30px 30px 30px;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	margin-top: 10px;
-}
-
-.main .col .col-header {
-	border-bottom: 1px dotted #ccc;
-	margin-bottom: 15px;
-}
-
-.main .col .col-header .title {
-	font-weight: bold;
-}
-
-.main .col .col-header i.fa {
-	margin-right: 10px;
-}
-
-.main .col .col-content {
-	min-height: 205px;
-}
-
-.main .register-users .col-content {
-	margin-bottom: 9px;
-}
-
-.main .col .col-footer .col-btn-wrapper	 {
-	display: inline-block;
-	margin-left: 15px;
-}

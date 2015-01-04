@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -36,7 +37,7 @@
 							</li>
 							<li class="topbar-divider"></li>
 							<li>
-								<a href="login.html">Log in</a>
+								<a href="#">Log in</a>
 							</li>
 							<li class="topbar-divider"></li>
 							<li>
@@ -243,91 +244,67 @@
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Business &amp; Money</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Children's Books</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Computers &amp; Technology</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
+														<!-- <span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span> -->s
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Cookbooks, Foods &amp; Wine</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Education &amp; Teaching</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Engineering &amp; Transportation</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Comics, Graphics &amp; Novels</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">History</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Law</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Medical Books</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Health, Fitness &amp; Dieting</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Humors &amp; Entertainment</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-
 													</div>
 												</li>
 												<li class="category-item megamenu__nav-item" role="presentation">
 													<div class="item-link">
 														<a href="" class="megamenu__nav-item-link">Travel &amp; Discovery</a>
-														<span class="pull-right"><i class="fa fa-angle-right megamenu__nav-item-link-arrow-right"></i></span>
-														
 													</div>
 												</li>
 											</ul>
@@ -480,7 +457,7 @@
 															</a>
 															<div class="book-meta">
 																<div class="title">
-																	<a href="">
+																	<a href="book/">
 																		<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
 																	</a>
 																</div>
@@ -520,7 +497,7 @@
 															</a>
 															<div class="book-meta">
 																<div class="title">
-																	<a href="">
+																	<a href="book/">
 																		<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
 																	</a>
 																</div>
@@ -560,7 +537,7 @@
 															</a>
 															<div class="book-meta">
 																<div class="title">
-																	<a href="">
+																	<a href="book/">
 																		<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
 																	</a>
 																</div>
@@ -600,7 +577,7 @@
 															</a>
 															<div class="book-meta">
 																<div class="title">
-																	<a href="">
+																	<a href="book/">
 																		<h5 class="book-title">Chó hoang Dingo hay là câu chuyện mối tình đầu</h5>
 																	</a>
 																</div>

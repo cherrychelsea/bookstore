@@ -1,3 +1,4 @@
+<?php  ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,8 +11,8 @@
 	    <link rel="stylesheet" href="css/bootstrap.css">
 	    <link rel="stylesheet" href="css/custom.css">
 	    <!-- Font awesome -->
-	    <link rel="stylesheet" href="plugins/fa/css/font-awesome.css">
-	    <link rel="stylesheet" href="plugins/fp/css/flickerplate.css">
+	    <link rel="stylesheet" href="fa/css/font-awesome.css">
+	    <link rel="stylesheet" href="fp/css/flickerplate.css">
 		<!-- script -->
 		<script src="js/jquery.js"></script>
 		<script src="js/helper.js"></script>
@@ -36,7 +37,7 @@
 							</li>
 							<li class="topbar-divider"></li>
 							<li>
-								<a href="login.html">Log in</a>
+								<a href="#">Log in</a>
 							</li>
 							<li class="topbar-divider"></li>
 							<li>
@@ -507,7 +508,7 @@
 									</form>
 								</div>
 								<!-- end of add to cart -->
-							</div> <!-- end of order &amp; add to cart -->
+							</div> <!-- end of order & add to cart -->
 						</div>
 					</div> <!-- end of book three-column view -->
 					<!-- <hr class="divider"> -->
@@ -757,7 +758,6 @@
 						<div class="customer-review">
 							<div class="row">
 								<div class="col-md-6 col-lg-6">
-									<!-- Top reviews -->
 									<div class="top-review-wrapper">
 										<p>Top reviews</p>
 										<div class="bubble-wrapper">
@@ -778,187 +778,18 @@
 											<div class="review-qoute-bubble-arrow"></div>
 											<a href="" class="review-qoute-author">Duc Cuong</a>
 										</div>
-									</div> <!-- Top reviews -->
-									<!-- Reviews List -->
-									<div class="review-list">
-										<div class="review-item">
-											<!-- Review header -->
-											<div class="review-list-header">
-												<div class="review-header">
-													<div class="ratings-box">
-														<div class="ratings" style="width:90%"></div>
-													</div>
-													<div class="review-title">
-														<span class="title">Excellent introduction to web development</span>
-													</div>
-													<div class="review-author">
-														<span class="author-name">by Duc Cuong</span>
-													</div>
-												</div>
-											</div> <!-- end of Review header -->
-											<!-- Review Content -->
-											<div class="review-content">
-												<p>My first impression of the book is that it's beautiful. The text is large and the pages are colorful, making it very easy to thumb through when in a hurry. When I wasn't in a hurry and sat down to read it, I found that the book almost told the entire story through pictures. The words are there and technically correct, but it's the visuals in the book that really communicate information to the reader. I admired Duckett's approach to this book. He completely dispels with the buzzwords that glitter so many books these days. There's mention of HTML5 and CSS3, for sure, but it's done in such a way that it doesn't seem gimmicky or hyped. The title of the book itself is evidence of this. Duckett clearly doesn't want you thinking about HTML 4 vs. HTML5 or CSS 2 vs. CSS3. Instead, he wants you to understand the concepts that link together web technology and good design. Some of that is done with HTML 4 and CSS 2 while some is done with HTML5 and CSS3. This book is really targeted at beginners without a technical background, and it does an exceptional job in serving this audience. The approach is perhaps the gentlest introduction to the concept of web programming that I've ever encountered. So gentle, in fact, I think that almost anyone could pick up this book and start to make a simple web page relatively quickly.</p>
-											</div> <!-- end of review content -->
-										</div>
+									</div>
 
-
-										<div class="review-item">
-											<!-- Review header -->
-											<div class="review-list-header">
-												<div class="review-header">
-													<div class="ratings-box">
-														<div class="ratings" style="width:90%"></div>
-													</div>
-													<div class="review-title">
-														<span class="title">The only book you'll need to learn HTML &amp; CSS</span>
-													</div>
-													<div class="review-author">
-														<span class="author-name">by Martin </span>
-														<span class="review-date"> on January 03, 2015</span>
-													</div>
-												</div>
-											</div> <!-- end of Review header -->
-											<!-- Review Content -->
-											<div class="review-content">
-												<p>I have bought a number of books to familiarise myself with HTML5 &amp; CSS3 and the enhancements they deliver. I have always found the detail of how to do clever things with css difficult to understand and follow. No book has been concise nor easy to follow as is this book "HTML &amp; CSS: Design and Build Websites". The book is brilliantly laid out, succinct, full of easy to understand examples made progress through the understanding of how html and css relate a breeze. This is now my reference book for understanding the other titles relating to html &amp; css. Absolutely recommend this title to anyone stepping out into gaining a personal understanding of HTML5 &amp; css for themselves.</p>
-											</div> <!-- end of review content -->
-										</div>
-
-										<div class="review-item">
-											<!-- Review header -->
-											<div class="review-list-header">
-												<div class="review-header">
-													<div class="ratings-box">
-														<div class="ratings" style="width:90%"></div>
-													</div>
-													<div class="review-title">
-														<span class="title">Excellent introduction to web development</span>
-													</div>
-													<div class="review-author">
-														<span class="author-name">by Duc Cuong</span>
-													</div>
-												</div>
-											</div> <!-- end of Review header -->
-											<!-- Review Content -->
-											<div class="review-content">
-												<p>My first impression of the book is that it's beautiful. The text is large and the pages are colorful, making it very easy to thumb through when in a hurry. When I wasn't in a hurry and sat down to read it, I found that the book almost told the entire story through pictures. The words are there and technically correct, but it's the visuals in the book that really communicate information to the reader. I admired Duckett's approach to this book. He completely dispels with the buzzwords that glitter so many books these days. There's mention of HTML5 and CSS3, for sure, but it's done in such a way that it doesn't seem gimmicky or hyped. The title of the book itself is evidence of this. Duckett clearly doesn't want you thinking about HTML 4 vs. HTML5 or CSS 2 vs. CSS3. Instead, he wants you to understand the concepts that link together web technology and good design. Some of that is done with HTML 4 and CSS 2 while some is done with HTML5 and CSS3. This book is really targeted at beginners without a technical background, and it does an exceptional job in serving this audience. The approach is perhaps the gentlest introduction to the concept of web programming that I've ever encountered. So gentle, in fact, I think that almost anyone could pick up this book and start to make a simple web page relatively quickly.</p>
-											</div> <!-- end of review content -->
-										</div>
-
-									</div> <!-- end of review list -->
 								</div>
 								<div class="col-md-6 col-lg-6">
-									<!-- Ratings -->
-									<div class="row">
-										<div class="col-md-12">
-											<!-- Ratings -->
-											<div class="row">
-												<div class="rating-region">
-													<!-- overall ratings -->
-													<div class="col-md-4">
-														<div class="overall-rating">
-															<div class="header">
-																<p>Overall ratings</p>
-															</div>
-															<div class="ratings-box">
-																<div class="ratings" style="width:87%"></div>
-															</div>
-															<div class="rating-detail">
-																<span class="rate-details">4.7 out of 5 stars</span>
-															</div>
-														</div>
-													</div> <!-- end of overal ratings -->
-													<!-- Detail ratings -->
-													<div class="col-md-8">
-														<div class="detail-rating">
-															<div class="header">
-																<p>Detail ratings</p>
-															</div>
-															<div class="ratings-holder">
-																<table>
-																	<tr>
-																		<td class="rating-score"><span class="pull-right">5 star</span></td>
-																		<td class="rating-proportion">
-																			<!-- <div class="progress">
-																				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-																			</div> -->
-																		</td>
-																		<td class="rating-count"><span>459</span></td>
-																	</tr>
-																	<tr>
-																		<td class="rating-score"><span class="pull-right">4 star</span></td>
-																		<td class="rating-proportion">
-																			<!-- <div class="progress">
-																				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-																			</div> -->
-																		</td>
-																		<td class="rating-count"><span>459</span></td>
-																	</tr>
-																	<tr>
-																		<td class="rating-score"><span class="pull-right">3 star</span></td>
-																		<td class="rating-proportion">
-																			<!-- <div class="progress">
-																				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-																			</div> -->
-																		</td>
-																		<td class="rating-count"><span>459</span></td>
-																	</tr>
-																	<tr>
-																		<td class="rating-score"><span class="pull-right">2 star</span></td>
-																		<td class="rating-proportion">
-																			<!-- <div class="progress">
-																				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-																			</div> -->
-																		</td>
-																		<td class="rating-count"><span>459</span></td>
-																	</tr>
-																	<tr>
-																		<td class="rating-score"><span class="pull-right">1 star</span></td>
-																		<td class="rating-proportion">
-																			<!-- <div class="progress">
-																				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-																			</div> -->
-																		</td>
-																		<td class="rating-count"><span>459</span></td>
-																	</tr>
-																</table>
-															</div>
-														</div>
-													</div> <!-- end of detail ratings -->
-												</div>
-											</div> <!-- end of ratings row -->
+									<div class="rating-wrapper">
+										<div class="overall-rating">
+											sdfsa
 										</div>
-									</div> <!-- end of rating row -->
-									<!-- Write reviews -->
-									<div class="row">
-										<div class="col-md-12">
-											<div class="user-review">
-												<div class="header">
-													<h5>Write your review</h5>
-												</div>
-												<form action="" class="review-submit">
-													<div class="form-group">
-														<label for="reviewerDisplayNameInput">Display Name</label>
-														<input type="text" class="form-control input-control" id="reviewerDisplayNameInput" placeholder="Your display name for review">
-													</div>
-													<div class="form-group">
-														<label for="reviewerEmailInput">Email</label>
-														<input type="text" class="form-control input-control" id="reviewerEmailInput" placeholder="Your email">
-													</div>
-													<div class="form-group">
-														<label for="reviewTitleInput">Review title</label>
-														<input type="text" class="form-control input-control" id="reviewTitleInput" placeholder="Title of your review">
-													</div>
-													<div class="form-group">
-														<label for="revieweInput" >Review content</label>
-														<textarea type="text" class="form-control input-control" id="reviewInput" placeholder="Enter your review here"></textarea>
-													</div>
-													<button type="submit" class="btn btn-default btn-red submit-btn" id="reviewSubmitButton">Submit</button>
-												</form>
-											</div>
+										<div class="detail-ratings">
+											asfsdf
 										</div>
-									</div> <!-- end of write review -->
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1068,11 +899,11 @@
 			</div>
 		</div>
 
-		<script src="plugins/fp/js/min/modernizr-custom-v2.7.1.min.js"></script>
-		<script src="plugins/fp/js/min/hammer-v2.0.3.min.js"></script>
+		<script src="fp/js/min/modernizr-custom-v2.7.1.min.js"></script>
+		<script src="fp/js/min/hammer-v2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Image Slider FP -->
-		<script src="plugins/fp/js/min/flickerplate.min.js"></script>
+		<script src="fp/js/min/flickerplate.min.js"></script>
 		<script src="js/slider.js"></script>
 		<script src="js/bookstore.js"></script>
 	</body>
