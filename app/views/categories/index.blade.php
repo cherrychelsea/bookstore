@@ -11,7 +11,7 @@
 					{{ $category->name }}
 					{{ Form:: open(array('url'=>'admin/categories/destroy', 'class'=>'in-line')) }}
 					{{ Form::hidden('id', $category->id) }}
-					{{ Form:submit('delete') }}
+					{{ Form::submit('delete') }}
 					{{ Form::close() }}
 				</li>
 			@endforeach

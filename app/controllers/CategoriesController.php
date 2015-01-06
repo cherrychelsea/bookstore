@@ -15,7 +15,8 @@
 		}
 
 		public function postCreate() {
-			$validator = Validator::make(Input::all(), Category:$rules);
+			$valRules = Category::rules;
+			$validator = Validator::make(Input::all(), $valRules);
 
 			if($validator->passes()) {
 				$category = new Category;

@@ -446,7 +446,7 @@
 												<ul>
 													<li>
 														<!-- <img src="img/slider/slide_harry_potter_box_set.jpg" alt="" class="slider-image"> -->
-														{{ HTML::image('img/slider/slide_harry_potter_box_set.jpg', array("class"=>"slider-image"))}}
+														{{ HTML::image("../img/slider/slide_harry_potter_box_set.jpg", "", array("class"=>"slider-image")) }}
 													</li>
 													<li>
 														<img src="img/slider/slide_alex_feg_bio.jpg" alt="" class="slider-image">
@@ -474,7 +474,7 @@
 															<a href="#">
 																<div class="book-visual">
 																	<div class="book-thumb">
-																		<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																		<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																		<div class="book-promotion">
 																			<span class="new">New</span>
 																		</div>
@@ -514,7 +514,7 @@
 															<a href="#">
 																<div class="book-visual">
 																	<div class="book-thumb">
-																		<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																		<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																		<div class="book-promotion">
 																			<span class="discount">-20%</span>
 																		</div>
@@ -554,7 +554,7 @@
 															<a href="#">
 																<div class="book-visual">
 																	<div class="book-thumb">
-																		<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																		<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																		<div class="book-promotion">
 																			<span class="new">New</span>
 																		</div>
@@ -594,7 +594,7 @@
 															<a href="#">
 																<div class="book-visual">
 																	<div class="book-thumb">
-																		<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																		<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																		<div class="book-promotion">
 																			<span class="new">New</span>
 																		</div>
@@ -650,7 +650,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -691,7 +691,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -732,7 +732,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -773,7 +773,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -828,7 +828,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -869,7 +869,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -910,7 +910,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -951,7 +951,7 @@
 														<a href="#">
 															<div class="book-visual">
 																<div class="book-thumb">
-																	<div class="book-img"><img src="img/thumb/books/see_how_small-scott_blockwood.jpg" alt="See how small - Scott Blockwood" class="book-thumbnail"></div>
+																	<div class="book-img">{{ HTML::image("../img/thumb/books/see_how_small-scott_blockwood.jpg", "See how small - Scott Blockwood", array("class"=>"book-thumbnail")) }}</div>
 																	<div class="book-promotion">
 																		<span class="new">New</span>
 																	</div>
@@ -1007,7 +1007,7 @@
 												<article class="popular-author">
 													<div class="author-meta">
 														<div class="author-img">
-															<img src="img/author/james_patterson.jpg" alt="" class="author-img">
+															<img src="../img/author/james_patterson.jpg" alt="" class="author-img">
 														</div>
 														<div class="author-info">
 															<h4 class="author-name">James Patterson</h4>
@@ -1023,7 +1023,7 @@
 												<article class="popular-author">
 													<div class="author-meta">
 														<div class="author-img">
-															<img src="img/author/james_patterson.jpg" alt="" class="author-img">
+															<img src="../img/author/james_patterson.jpg" alt="" class="author-img">
 														</div>
 														<div class="author-info">
 															<h4 class="author-name">James Patterson</h4>
