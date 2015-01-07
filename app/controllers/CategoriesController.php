@@ -15,15 +15,14 @@
 		}
 
 		public function postCreate() {
-			$valRules = Category::rules;
-			$validator = Validator::make(Input::all(), $valRules);
+			$validator = Validator::make(Input::all(), Category::$rules);
 
 			if($validator->passes()) {
 				$category = new Category;
 				$category->name = Input::get('name');
 				$category->save();
 
-				return Redirect::to('adamin/categories/index')
+				return Redirect::to('admin/categories/index')
 						->with('message', 'Category created successfully!');
 			}
 			return Redirect::to('admin/categories/index')
